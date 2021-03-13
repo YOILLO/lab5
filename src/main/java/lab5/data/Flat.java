@@ -1,5 +1,7 @@
 package lab5.data;
 
+import java.util.Objects;
+
 public class Flat {
     private int id; //Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
     private String name; //Поле не может быть null, Строка не может быть пустой
@@ -78,17 +80,39 @@ public class Flat {
 
     @Override
     public String toString() {
-        return "Flat{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", coordinates=" + coordinates +
-                ", creationDate=" + creationDate +
-                ", area=" + area +
-                ", numberOfRooms=" + numberOfRooms +
-                ", price=" + price +
-                ", furnish=" + furnish +
-                ", transport=" + transport +
-                ", house=" + house +
+        return "Flat{\n" +
+                "id=" + id + ",\n" +
+                "name='" + name + '\'' + ",\n" +
+                "coordinates: " + coordinates + ",\n" +
+                "creationDate=" + creationDate + ",\n" +
+                "area=" + area + ",\n" +
+                "numberOfRooms=" + numberOfRooms + ",\n" +
+                "price=" + price + ",\n" +
+                "furnish=" + furnish + ",\n" +
+                "transport=" + transport + ",\n" +
+                "house: " + house +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Flat flat = (Flat) o;
+        return id == flat.id &&
+                Objects.equals(name, flat.name) &&
+                Objects.equals(coordinates, flat.coordinates) &&
+                Objects.equals(creationDate, flat.creationDate) &&
+                Objects.equals(area, flat.area) &&
+                Objects.equals(numberOfRooms, flat.numberOfRooms) &&
+                Objects.equals(price, flat.price) &&
+                furnish == flat.furnish &&
+                transport == flat.transport &&
+                Objects.equals(house, flat.house);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, coordinates, creationDate, area, numberOfRooms, price, furnish, transport, house);
     }
 }

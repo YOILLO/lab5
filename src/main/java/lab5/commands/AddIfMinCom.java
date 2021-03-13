@@ -1,14 +1,14 @@
 package lab5.commands;
 
 import lab5.io.Console;
-import lab5.main.Collection;
+import lab5.main.CollectionManager;
 import lab5.data.Flat;
 
 public class AddIfMinCom extends AbstractCommand{
-    private Collection collection;
+    private CollectionManager collection;
     private Console console;
 
-    public AddIfMinCom(Collection col, Console con)
+    public AddIfMinCom(CollectionManager col, Console con)
     {
         super("add_if_min", " {element}: добавить новый элемент, если его значение меньше, чем у наименьшего");
         collection = col;
@@ -16,7 +16,7 @@ public class AddIfMinCom extends AbstractCommand{
     }
 
     public boolean execute(String argument) {
-        Flat testFl = console.askFlat();
+        Flat testFl = console.askFlatWithID();
         if (collection.collectoinSize() == 0 || testFl.compareTo(collection.getFirst())<  0)
         {
             collection.AddToCollection(testFl);

@@ -11,17 +11,14 @@ public class CommandManager {
     Scanner scanner;
     private List<AbstractCommand> commands= new ArrayList<>();
 
-    public CommandManager(Console cons, Scanner userScan, AbstractCommand AddCom, AbstractCommand AddMinCom,
-                          AbstractCommand ClearCom, AbstractCommand ExitCom,
-                          AbstractCommand FilterContainsNameCom){
+    public CommandManager(Console cons, Scanner userScan, AbstractCommand[] com){
         console = cons;
         scanner = userScan;
 
-        commands.add(AddCom);
-        commands.add(AddMinCom);
-        commands.add(ClearCom);
-        commands.add(ExitCom);
-        commands.add(FilterContainsNameCom);
+        for (AbstractCommand comm : com)
+        {
+            commands.add(comm);
+        }
     }
 
     public void ConsoleMod()
@@ -35,14 +32,20 @@ public class CommandManager {
     }
     private boolean launchCommand(String[] com)
     {
-        for (AbstractCommand comm : commands)
+        if (com[0].trim().equals("help"))
         {
-            if(comm.getName().equals(com[0]))
-            {
-                return comm.execute(com[1]);
+            for (AbstractCommand comm : commands) {
+                Console.println(comm.getName() + comm.getDescription());
             }
         }
-        Console.printError("Такой команды нет, проверь help");
+        else {
+            for (AbstractCommand comm : commands) {
+                if (comm.getName().equals(com[0])) {
+                    return comm.execute(com[1]);
+                }
+            }
+            Console.printError("Такой команды нет, проверь help");
+        }
         return true;
     }
 }

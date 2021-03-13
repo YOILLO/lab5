@@ -1,5 +1,7 @@
 package lab5.data;
 
+import java.util.Objects;
+
 public class House {
     private String name; //Поле не может быть null
     private long year; //Значение поля должно быть больше 0
@@ -29,5 +31,20 @@ public class House {
         return "name='" + name + '\'' +
                 ", year=" + year +
                 ", numberOfFloors=" + numberOfFloors;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        House house = (House) o;
+        return year == house.year &&
+                numberOfFloors == house.numberOfFloors &&
+                Objects.equals(name, house.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, year, numberOfFloors);
     }
 }

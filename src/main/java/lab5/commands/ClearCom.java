@@ -1,14 +1,14 @@
 package lab5.commands;
 
 import lab5.io.Console;
-import lab5.main.Collection;
+import lab5.main.CollectionManager;
 
 public class ClearCom extends AbstractCommand{
-    private Collection collection;
+    private CollectionManager collection;
 
-    public ClearCom(Collection col)
+    public ClearCom(CollectionManager col)
     {
-        super("clear", "очистить коллекцию");
+        super("clear", " очистить коллекцию");
         collection = col;
     }
 

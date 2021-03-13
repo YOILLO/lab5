@@ -2,18 +2,15 @@ package lab5.commands;
 
 import lab5.data.Flat;
 import lab5.io.Console;
-import lab5.io.FileManager;
-import lab5.main.Collection;
-
-import java.time.LocalDateTime;
+import lab5.main.CollectionManager;
 
 public class AddCom extends AbstractCommand{
-    private Collection collection;
+    private CollectionManager collection;
     private Console console;
 
-    public AddCom(Collection col, Console con)
+    public AddCom(CollectionManager col, Console con)
     {
-        super("add", "{element}: Добавить новый элемент в коллекцию");
+        super("add", " {element}: Добавить новый элемент в коллекцию");
         collection = col;
         console = con;
     }
