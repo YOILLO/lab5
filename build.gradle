@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.google.code.gson:gson:2.8.6'
+    implementation group: 'com.opencsv', name: 'opencsv', version: '4.3'
 }
 
 run {
@@ -23,3 +23,6 @@ jar {
         attributes 'Main-Class': 'run.App'
     }
 }
+
+compileJava.options.encoding = 'cp1251'
+compileTestJava.options.encoding = 'cp1251'
