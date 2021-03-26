@@ -3,6 +3,9 @@ package lab5.commands;
 import lab5.io.Console;
 import lab5.main.CollectionManager;
 
+/**
+ * Print sorted command
+ */
 public class PrintAscendingCom extends AbstractCommand{
     CollectionManager collection;
 

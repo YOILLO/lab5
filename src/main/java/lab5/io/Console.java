@@ -8,6 +8,9 @@ import lab5.main.CollectionManager;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
+/**
+ * Control and parse console command
+ */
 public class Console {
     private Scanner userScaner;
     private CollectionManager myCollectoin;
@@ -18,6 +21,10 @@ public class Console {
         myCollectoin = collection;
     }
 
+    /**
+     * Get flat from user command
+     * @return Got flat
+     */
     public Flat askFlat()
     {
         int Id = myCollectoin.generateNextId();
@@ -37,7 +44,7 @@ public class Console {
             {
                 printError("Строка не может быть пустой");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             } catch (WrongFormat wrongFormat) {
                 printError("Не используйте \";\"");
             }
@@ -59,7 +66,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -79,7 +86,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -100,7 +107,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -121,7 +128,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -144,7 +151,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -202,7 +209,7 @@ public class Console {
             {
                 printError("Строка не может быть пустой");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }catch (WrongFormat wrongFormat) {
                 printError("Не используйте \";\"");
             }
@@ -225,7 +232,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -246,7 +253,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -254,27 +261,15 @@ public class Console {
         return new Flat(Id, name, new Coordinates(x,y), java.time.LocalDate.now(), erea,
                 numberOfRooms, price, furnish, transport, new House(houseName, year, numberOfFlors));
     }
-    public Flat askFlatWithID()
+
+    /**
+     * Get flat from user but with consume ID
+     * @param id ID
+     * @return Flat
+     */
+    public Flat askFlatWithID(int id)
     {
-        int Id = 0;
-        while (true) {
-            try{
-                println("Ведите ID: ");
-                String st = userScaner.nextLine().trim();
-                if (st == null) throw new EmptyIO();
-                if (st.equals("")) throw new EmptyIO();
-                Id = Integer.parseInt(st);
-                break;
-            }
-            catch (EmptyIO e)
-            {
-                printError("Строка не может быть пустой");
-            }catch (NumberFormatException exception) {
-                printError("Должно быть представлено числом!");
-            }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
-            }
-        }
+        int Id = id;
 
         println("ID = " + Integer.toString(Id));
 
@@ -285,13 +280,16 @@ public class Console {
                 String nm = userScaner.nextLine().trim();
                 if (nm == null) throw new EmptyIO();
                 if (nm.equals("")) throw new EmptyIO();
+                if (nm.contains(";")) throw  new WrongFormat();
                 name = nm;
             }
             catch (EmptyIO e)
             {
                 printError("Строка не может быть пустой");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
+            } catch (WrongFormat wrongFormat) {
+                printError("Не используйте \";\"");
             }
         }
 
@@ -301,7 +299,7 @@ public class Console {
                 println("Ведите кординату X: ");
                 String st = userScaner.nextLine().trim();
                 if (st == null) throw new EmptyIO();
-                if (st.equals("")) throw new EmptyIO();
+                if (name.equals("")) throw new EmptyIO();
                 x = Float.parseFloat(st);
                 break;
             }
@@ -311,7 +309,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -331,7 +329,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -352,7 +350,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -373,7 +371,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -396,7 +394,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -447,13 +445,16 @@ public class Console {
                 String nm = userScaner.nextLine().trim();
                 if (nm == null) throw new EmptyIO();
                 if (nm.equals("")) throw new EmptyIO();
+                if (nm.contains(";")) throw  new WrongFormat();
                 houseName = nm;
             }
             catch (EmptyIO e)
             {
                 printError("Строка не может быть пустой");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
+            }catch (WrongFormat wrongFormat) {
+                printError("Не используйте \";\"");
             }
         }
 
@@ -474,7 +475,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -495,7 +496,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -504,6 +505,10 @@ public class Console {
                 numberOfRooms, price, furnish, transport, new House(houseName, year, numberOfFlors));
     }
 
+    /**
+     * Ask house from user
+     * @return House
+     */
     public  House askHouse()
     {
         String houseName = null;
@@ -513,13 +518,16 @@ public class Console {
                 String nm = userScaner.nextLine().trim();
                 if (nm == null) throw new EmptyIO();
                 if (nm.equals("")) throw new EmptyIO();
+                if (nm.contains(";")) throw  new WrongFormat();
                 houseName = nm;
             }
             catch (EmptyIO e)
             {
                 printError("Строка не может быть пустой");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
+            } catch (WrongFormat wrongFormat) {
+                printError("Не используй \";\"");
             }
         }
 
@@ -540,7 +548,7 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
@@ -561,18 +569,26 @@ public class Console {
             }catch (NumberFormatException exception) {
                 printError("Должно быть представлено числом!");
             }catch (NoSuchElementException exception) {
-                printError("Имя не распознано!");
+                printError("имя не распознано!");
             }
         }
 
         return new House(houseName, year, numberOfFlors);
     }
 
+    /**
+     * Static print error command
+     * @param msg Error msg
+     */
     public static void printError(String msg)
     {
         System.out.println("Err: " + msg);
     }
 
+    /**
+     * Just print command
+     * @param msg Message
+     */
     public static void println(String msg){
         System.out.println(msg);
     }

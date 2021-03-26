@@ -2,6 +2,9 @@ package lab5.commands;
 
 import lab5.main.CollectionManager;
 
+/**
+ * Save collection command
+ */
 public class SaveCom extends AbstractCommand{
     CollectionManager collection;
 

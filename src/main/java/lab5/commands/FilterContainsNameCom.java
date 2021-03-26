@@ -6,6 +6,9 @@ import lab5.main.CollectionManager;
 
 import java.util.regex.PatternSyntaxException;
 
+/**
+ * Filter by name contains
+ */
 public class FilterContainsNameCom extends AbstractCommand {
     private CollectionManager collection;
 

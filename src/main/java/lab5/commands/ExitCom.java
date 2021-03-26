@@ -1,5 +1,8 @@
 package lab5.commands;
 
+/**
+ * Command for exit
+ */
 public class ExitCom extends AbstractCommand{
     public ExitCom()
     {

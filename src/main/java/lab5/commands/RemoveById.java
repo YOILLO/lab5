@@ -3,6 +3,9 @@ package lab5.commands;
 import lab5.io.Console;
 import lab5.main.CollectionManager;
 
+/**
+ * Remove by id
+ */
 public class RemoveById extends AbstractCommand{
     CollectionManager collection;
 

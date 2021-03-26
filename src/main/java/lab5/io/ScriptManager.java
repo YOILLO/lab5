@@ -2,6 +2,9 @@ package lab5.io;
 
 import java.io.*;
 
+/**
+ * Work with script file
+ */
 public class ScriptManager {
     BufferedReader bufferedReader;
 
@@ -13,6 +16,10 @@ public class ScriptManager {
         }
     }
 
+    /**
+     * Read string from file
+     * @return String from filr
+     */
     public String readLine(){
         try {
             return bufferedReader.readLine();

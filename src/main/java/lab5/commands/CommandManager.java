@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Manager that run all commands
+ */
 public class CommandManager {
     private Console console;
     private Scanner scanner;
@@ -25,6 +28,9 @@ public class CommandManager {
         }
     }
 
+    /**
+     * Console mode
+     */
     public void ConsoleMod()
     {
         boolean isWork = true;
@@ -34,6 +40,12 @@ public class CommandManager {
             isWork = launchCommand(userCommand);
         }
     }
+
+    /**
+     * Launch console command
+     * @param com Command that should be run
+     * @return End or not to end
+     */
     private boolean launchCommand(String[] com)
     {
         if (com[0].trim().equals("help")) {
@@ -46,6 +58,7 @@ public class CommandManager {
         else if (com[0].trim().equals("execute_script")){
             if (!com[1].trim().equals("")) {
                 ScripMode(com[1].trim());
+                files.clear();
             }
             else{
                 Console.printError("Необходим file_name");
@@ -62,6 +75,11 @@ public class CommandManager {
         return true;
     }
 
+    /**
+     * Launch command for script
+     * @param com Command that should be runned
+     * @return End or not to end
+     */
     private boolean launchScriptCommand(String[] com)
     {
         if (com[0].trim().equals("help")) {
@@ -92,6 +110,10 @@ public class CommandManager {
         return true;
     }
 
+    /**
+     * Start script mode
+     * @param fileName Script file
+     */
     private void ScripMode(String fileName){
         ScriptManager scr = new ScriptManager(fileName.trim());
         if (scr == null){

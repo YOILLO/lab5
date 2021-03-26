@@ -1,5 +1,8 @@
 package lab5.commands;
 
+/**
+ * Abstract command, to print name and description
+ */
 public abstract class AbstractCommand implements ICommand{
     private String name;
     private String description;

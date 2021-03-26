@@ -4,6 +4,9 @@ import lab5.data.Flat;
 import lab5.io.Console;
 import lab5.main.CollectionManager;
 
+/**
+ * Add element command
+ */
 public class AddCom extends AbstractCommand{
     private CollectionManager collection;
     private Console console;

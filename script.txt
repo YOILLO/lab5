@@ -1,4 +1,5 @@
 clear
 execute_script script.txt
+clear
 exit
 clear

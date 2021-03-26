@@ -7,7 +7,9 @@ import java.io.*;
 import java.time.LocalDate;
 import java.util.Vector;
 
-
+/**
+ * Manage collection file
+ */
 public class FileManager {
     private String FileName;
 
@@ -16,6 +18,10 @@ public class FileManager {
         FileName = file;
     }
 
+    /**
+     * Read collection from file
+     * @return Collection
+     */
     public Vector<Flat> readCollection(){
         try {
             Vector<Flat> buffer = new Vector<Flat>();
@@ -46,6 +52,11 @@ public class FileManager {
         }
         return new Vector<>();
     }
+
+    /**
+     * Save collection to file
+     * @param coll Collection
+     */
     public void WriteCollection(Vector<Flat> coll)
     {
         try {

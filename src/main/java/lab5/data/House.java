@@ -1,7 +1,7 @@
 package lab5.data;
-
-import com.opencsv.bean.CsvBindByName;
-import com.opencsv.bean.CsvBindByPosition;
+/**
+ * House data
+ */
 
 import java.util.Objects;
 
@@ -31,7 +31,10 @@ public class House {
     public long getNumberOfFloors() {
         return numberOfFloors;
     }
-
+    /**
+     * Convert to CSV data
+     * @return CSV data
+     */
     public String toCSV(){
         return name + ";" + Long.toString(year) + ";" + Long.toString(numberOfFloors);
     }

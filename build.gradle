@@ -10,10 +10,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    implementation group: 'com.opencsv', name: 'opencsv', version: '4.3'
-}
-
 run {
     standardInput = System.in
 }

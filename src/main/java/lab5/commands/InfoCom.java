@@ -3,6 +3,9 @@ package lab5.commands;
 import lab5.io.Console;
 import lab5.main.CollectionManager;
 
+/**
+ * Information about collection command
+ */
 public class InfoCom extends AbstractCommand{
     CollectionManager collection;
 
@@ -14,7 +17,7 @@ public class InfoCom extends AbstractCommand{
 
     @Override
     public boolean execute(String argument) {
-        Console.println("Инфрмация о коллекции:");
+        Console.println("инфрмация о коллекции:");
         Console.println(collection.toString());
         return true;
     }

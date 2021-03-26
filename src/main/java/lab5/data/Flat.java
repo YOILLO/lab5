@@ -1,11 +1,12 @@
 package lab5.data;
 
-import com.opencsv.bean.CsvBindByName;
-import com.opencsv.bean.CsvBindByPosition;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
+/**
+ * Flat data
+ */
 public class Flat {
 
     private int id; //Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
@@ -91,7 +92,10 @@ public class Flat {
     {
         return Integer.compare(id, flat.getId());
     }
-
+    /**
+     * Convert to CSV data
+     * @return CSV data
+     */
     public String toCSV(){
         return Integer.toString(id) + ";" +
                 name + ";" +
