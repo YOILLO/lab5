@@ -1,9 +1,14 @@
 package lab5.data;
 
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
+
 import java.util.Objects;
 
 public class Coordinates {
+
     private float x;
+
     private float y;
 
     public Coordinates(float X, float Y)
@@ -20,6 +25,10 @@ public class Coordinates {
     public float GetY()
     {
         return y;
+    }
+
+    public String toCSV(){
+        return Float.toString(x) + ";" + Float.toString(y);
     }
 
     @Override

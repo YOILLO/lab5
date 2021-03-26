@@ -30,6 +30,7 @@ public class Console {
                 String nm = userScaner.nextLine().trim();
                 if (nm == null) throw new EmptyIO();
                 if (nm.equals("")) throw new EmptyIO();
+                if (nm.contains(";")) throw  new WrongFormat();
                 name = nm;
             }
             catch (EmptyIO e)
@@ -37,6 +38,8 @@ public class Console {
                 printError("Строка не может быть пустой");
             }catch (NoSuchElementException exception) {
                 printError("Имя не распознано!");
+            } catch (WrongFormat wrongFormat) {
+                printError("Не используйте \";\"");
             }
         }
 
@@ -192,6 +195,7 @@ public class Console {
                 String nm = userScaner.nextLine().trim();
                 if (nm == null) throw new EmptyIO();
                 if (nm.equals("")) throw new EmptyIO();
+                if (nm.contains(";")) throw  new WrongFormat();
                 houseName = nm;
             }
             catch (EmptyIO e)
@@ -199,6 +203,8 @@ public class Console {
                 printError("Строка не может быть пустой");
             }catch (NoSuchElementException exception) {
                 printError("Имя не распознано!");
+            }catch (WrongFormat wrongFormat) {
+                printError("Не используйте \";\"");
             }
         }
 

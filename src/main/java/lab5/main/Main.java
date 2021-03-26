@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-
-        FileManager fileManager = new FileManager("a");
+        Console.println("Фаил: " + args[0]);
+        FileManager fileManager = new FileManager(args[0]);
         CollectionManager collection = new CollectionManager(fileManager);
         Scanner scanner = new Scanner(System.in, Charset.forName("cp1251"));
         Console console = new Console(scanner, collection);
@@ -22,7 +22,8 @@ public class Main {
                 new RemoveAnyByHouseCom(collection, console), new PrintAscendingCom(collection),
                 new InfoCom(collection), new ShowCom(collection),
                 new RemoveLastCom(collection), new RemoveById(collection),
-                new RemoveGreaterCom(collection, console), new UpdateIDCom(collection, console)});
+                new RemoveGreaterCom(collection, console), new UpdateIDCom(collection, console),
+                new SaveCom(collection)});
         commandManager.ConsoleMod();
     }
 }

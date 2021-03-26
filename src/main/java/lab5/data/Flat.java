@@ -1,17 +1,31 @@
 package lab5.data;
 
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
+
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Flat {
+
     private int id; //Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
+
     private String name; //Поле не может быть null, Строка не может быть пустой
+
     private Coordinates coordinates; //Поле не может быть null
+
     private java.time.LocalDate creationDate; //Поле не может быть null, Значение этого поля должно генерироваться автоматически
+
     private Integer area; //Значение поля должно быть больше 0
+
     private Integer numberOfRooms; //Максимальное значение поля: 17, Значение поля должно быть больше 0
+
     private Float price; //Максимальное значение поля: 191928932, Значение поля должно быть больше 0
+
     private Furnish furnish; //Поле не может быть null
+
     private Transport transport; //Поле может быть null
+
     private House house; //Поле не может быть null
 
     public Flat (int Id, String nm, Coordinates cd, java.time.LocalDate crD, Integer ea, Integer nOR, Float pc, Furnish fsh,
@@ -76,6 +90,19 @@ public class Flat {
     public int compareTo(Flat flat)
     {
         return Integer.compare(id, flat.getId());
+    }
+
+    public String toCSV(){
+        return Integer.toString(id) + ";" +
+                name + ";" +
+                coordinates.toCSV() + ";" +
+                creationDate.toString() + ";" +
+                area.toString() + ";" +
+                numberOfRooms.toString() + ";" +
+                price.toString() + ";" +
+                furnish.toString() + ";" +
+                transport.toString() + ";" +
+                house.toCSV();
     }
 
     @Override

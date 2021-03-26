@@ -22,31 +22,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83dcdae1-43e2-4f46-b6c9-52c431bc6fb6" name="Default Changelist" comment="Пишу еще">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/main/CollectionManager.java" afterDir="false" />
+    <list default="true" id="83dcdae1-43e2-4f46-b6c9-52c431bc6fb6" name="Default Changelist" comment="Почти конец, только фаил">
+      <change afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/lab5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lab5/io/ScriptManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/AddCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/AddCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/AddIfMinCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/AddIfMinCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/ClearCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/ClearCom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/ExitCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/ExitCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/FilterContainsNameCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/FilterContainsNameCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/HelpCom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/InfoCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/InfoCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/PrintAscendingCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/PrintAscendingCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveAnyByHouseCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveAnyByHouseCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveById.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveGreaterCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveGreaterCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveLastCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveLastCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/ShowCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/ShowCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/UpdateIDCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/UpdateIDCom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/SaveCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/SaveCom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/data/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/data/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/data/Flat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/data/Flat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/data/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/data/House.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/io/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/io/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/main/Collection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/io/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/io/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/main/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/main/CollectionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,16 +81,37 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Лабы по проге\lab5\src\main\java" />
+    </key>
+  </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab5.main.Main" />
       <module name="lab5.main" />
+      <option name="PROGRAM_PARAMETERS" value="file.csv" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,6 +125,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615576638574</updated>
+      <workItem from="1616784195673" duration="799000" />
+      <workItem from="1616785201566" duration="7358000" />
     </task>
     <task id="LOCAL-00001" summary="первый коммит">
       <created>1615576754723</created>
@@ -133,8 +149,18 @@
       <option name="project" value="LOCAL" />
       <updated>1615620227720</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Почти конец, только фаил">
+      <created>1615647184071</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615647184071</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -146,100 +172,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="первый коммит" />
     <MESSAGE value="Пишу еще" />
-    <option name="LAST_COMMIT_MESSAGE" value="Пишу еще" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="121" y="0" key="#Project_Structure" timestamp="1615576895806">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="121" y="0" key="#Project_Structure/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615576895806" />
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615594899347">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615594899347" />
-    <state x="404" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1615633629020">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="404" y="42" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615592809947" />
-    <state x="404" y="42" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1615633629020" />
-    <state x="371" y="130" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1615594897424">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="371" y="130" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615594897424" />
-    <state x="424" y="222" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1615621273046">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="424" y="222" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615595974919" />
-    <state x="424" y="222" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1280.680@0.0.1280.680" timestamp="1615621273046" />
-    <state x="418" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615646657359">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="418" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1615646657359" />
-    <state width="1237" height="267" key="GridCell.Tab.0.bottom" timestamp="1615647077993">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615597638131" />
-    <state width="1237" height="267" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615647077993" />
-    <state width="1237" height="267" key="GridCell.Tab.0.center" timestamp="1615647077993">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615597638130" />
-    <state width="1237" height="267" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1615647077993" />
-    <state width="1237" height="267" key="GridCell.Tab.0.left" timestamp="1615647077992">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615597638130" />
-    <state width="1237" height="267" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1615647077992" />
-    <state width="1237" height="267" key="GridCell.Tab.0.right" timestamp="1615647077993">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615597638131" />
-    <state width="1237" height="267" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1615647077993" />
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1615620669695">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615596869062" />
-    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1615620669695" />
-    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1615620669695">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615596869062" />
-    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1615620669695" />
-    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1615620669694">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615596869062" />
-    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1615620669694" />
-    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1615620669695">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615596869062" />
-    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1615620669695" />
-    <state x="221" y="76" key="IDE.errors.dialog" timestamp="1615596163102">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="221" y="76" key="IDE.errors.dialog/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615596163102" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1615594777937">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615594777937" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1615620233425">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615577699803" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1615620233425" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1615621147159">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1615621147159" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1615644193392">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.-392.1920.1040@0.0.1280.680" timestamp="1615594142609" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1615644193392" />
+    <MESSAGE value="Почти конец, только фаил" />
+    <option name="LAST_COMMIT_MESSAGE" value="Почти конец, только фаил" />
   </component>
 </project>

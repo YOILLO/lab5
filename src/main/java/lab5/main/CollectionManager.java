@@ -21,13 +21,18 @@ public class CollectionManager {
         flManager = fl;
         lastSaveTime = null;
 
-        //Load();
+        Load();
     }
 
     public void Load()
     {
         myCollection = flManager.readCollection();
         lastInitTime = java.time.LocalDateTime.now();
+    }
+
+    public void Save()
+    {
+        flManager.WriteCollection(myCollection);
     }
 
     public void AddToCollection(Flat fl)

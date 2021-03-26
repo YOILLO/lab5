@@ -1,10 +1,16 @@
 package lab5.data;
 
+import com.opencsv.bean.CsvBindByName;
+import com.opencsv.bean.CsvBindByPosition;
+
 import java.util.Objects;
 
 public class House {
+
     private String name; //Поле не может быть null
+
     private long year; //Значение поля должно быть больше 0
+
     private long numberOfFloors; //Значение поля должно быть больше 0
 
     public House(String nm, long ya, long numOF)
@@ -24,6 +30,10 @@ public class House {
 
     public long getNumberOfFloors() {
         return numberOfFloors;
+    }
+
+    public String toCSV(){
+        return name + ";" + Long.toString(year) + ";" + Long.toString(numberOfFloors);
     }
 
     @Override
