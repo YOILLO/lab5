@@ -22,14 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83dcdae1-43e2-4f46-b6c9-52c431bc6fb6" name="Default Changelist" comment="Добавил JavaDoc">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lab5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="83dcdae1-43e2-4f46-b6c9-52c431bc6fb6" name="Default Changelist" comment="Исправил ошибки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/FilterContainsNameCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/FilterContainsNameCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveById.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,7 @@
       <recent name="E:\Лабы по проге\lab5\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.lab5 [jar]">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab5.main.Main" />
       <module name="lab5.main" />
@@ -165,7 +160,7 @@
       <workItem from="1616785201566" duration="7515000" />
       <workItem from="1616793074312" duration="5643000" />
       <workItem from="1616843300615" duration="955000" />
-      <workItem from="1616844335331" duration="1044000" />
+      <workItem from="1616844335331" duration="2617000" />
     </task>
     <task id="LOCAL-00001" summary="первый коммит">
       <created>1615576754723</created>
@@ -209,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616797510333</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Исправил ошибки">
+      <created>1616845532747</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616845532747</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +235,7 @@
     <MESSAGE value="Почти конец, только фаил" />
     <MESSAGE value="Готово" />
     <MESSAGE value="Добавил JavaDoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил JavaDoc" />
+    <MESSAGE value="Исправил ошибки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправил ошибки" />
   </component>
 </project>

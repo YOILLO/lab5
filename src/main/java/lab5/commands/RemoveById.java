@@ -18,7 +18,7 @@ public class RemoveById extends AbstractCommand{
     @Override
     public boolean execute(String argument) {
         try {
-            collection.deleteByID(Integer.parseInt(argument));
+            collection.deleteByID(Integer.parseInt(argument.trim()));
         }
         catch (NumberFormatException e)
         {
