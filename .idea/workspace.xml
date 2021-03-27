@@ -22,40 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83dcdae1-43e2-4f46-b6c9-52c431bc6fb6" name="Default Changelist" comment="Готово">
+    <list default="true" id="83dcdae1-43e2-4f46-b6c9-52c431bc6fb6" name="Default Changelist" comment="Добавил JavaDoc">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lab5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab5.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.txt" beforeDir="false" afterPath="$PROJECT_DIR$/script.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/AbstractCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/AbstractCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/AddCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/AddCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/AddIfMinCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/AddIfMinCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/ClearCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/ClearCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/ExecuteScriptCom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/ExitCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/ExitCom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/FilterContainsNameCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/FilterContainsNameCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/ICommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/InfoCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/InfoCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/PrintAscendingCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/PrintAscendingCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveAnyByHouseCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveAnyByHouseCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveById.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveGreaterCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveGreaterCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveLastCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/RemoveLastCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/SaveCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/SaveCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/ShowCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/ShowCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/commands/UpdateIDCom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/commands/UpdateIDCom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/data/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/data/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/data/Flat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/data/Flat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/data/Furnish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/data/Furnish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/data/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/data/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/data/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/data/Transport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/exeptions/EmptyIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/exeptions/EmptyIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/exeptions/WrongFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/exeptions/WrongFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/io/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/io/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/io/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/io/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/io/ScriptManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/io/ScriptManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab5/main/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/main/CollectionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab5/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab5/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +95,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lab5 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="lab5" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -143,6 +148,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.lab5 [jar]" />
         <item itemvalue="Gradle.lab5" />
       </list>
     </recent_temporary>
@@ -157,7 +163,9 @@
       <updated>1615576638574</updated>
       <workItem from="1616784195673" duration="799000" />
       <workItem from="1616785201566" duration="7515000" />
-      <workItem from="1616793074312" duration="4186000" />
+      <workItem from="1616793074312" duration="5643000" />
+      <workItem from="1616843300615" duration="955000" />
+      <workItem from="1616844335331" duration="1044000" />
     </task>
     <task id="LOCAL-00001" summary="первый коммит">
       <created>1615576754723</created>
@@ -194,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616792920389</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавил JavaDoc">
+      <created>1616797510333</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616797510333</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +232,7 @@
     <MESSAGE value="Пишу еще" />
     <MESSAGE value="Почти конец, только фаил" />
     <MESSAGE value="Готово" />
-    <option name="LAST_COMMIT_MESSAGE" value="Готово" />
+    <MESSAGE value="Добавил JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил JavaDoc" />
   </component>
 </project>

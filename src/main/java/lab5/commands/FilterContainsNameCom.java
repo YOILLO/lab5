@@ -20,7 +20,7 @@ public class FilterContainsNameCom extends AbstractCommand {
 
     public boolean execute(String argument) {
         try{
-            if (argument.isEmpty() || argument.isBlank()) throw new WrongFormat();
+            if (argument.isEmpty()) throw new WrongFormat();
             String info = collection.nameFillteredInfo(argument.trim());
             if (info.isEmpty())
             {

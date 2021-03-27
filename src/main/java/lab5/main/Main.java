@@ -4,6 +4,8 @@ import lab5.commands.*;
 import lab5.io.Console;
 import lab5.io.FileManager;
 
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.util.Scanner;
 
@@ -14,10 +16,21 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)
     {
-        Console.println("Фаил: " + args[0]);
-        FileManager fileManager = new FileManager(args[0]);
+        try {
+            System.setOut(new PrintStream(System.out, true, "windows-1251"));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        String file = "";
+        try {
+            file = args[0];
+        }catch (ArrayIndexOutOfBoundsException e){
+            Console.printError("Нет файла");
+        }
+        Console.println("Фаил: " + file);
+        FileManager fileManager = new FileManager(file);
         CollectionManager collection = new CollectionManager(fileManager);
-        Scanner scanner = new Scanner(System.in, Charset.forName("cp1251"));
+        Scanner scanner = new Scanner(System.in, "windows-1251");
         Console console = new Console(scanner, collection);
         CommandManager commandManager = new CommandManager(console, scanner,
                 new AbstractCommand[]{new AddCom(collection, console),
